@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body class="text-center">
+    <form action="/auth/showall" method="post">
+      <main role="main" class="inner cover">
+
+        <button><a href ="/">HOME PAGE</a></button>
+        <button><a href ="/">LOGOUT</a></button>
+
+        <p>Below are a list of all users created and saved within the MongoDB</p>
+        
+      
+
+        <% links.forEach(function(item,index){ %>
+        <li>Name: <%= item.name %>  Password: <%= item.password %>  Role: <%= item.role %></li>
+        <% }) %>
+        
+    </form>
+
+  </body>
+</html>
+  
+

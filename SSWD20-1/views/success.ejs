@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= prod.name %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <form action ="/auth" method ="post">
+        <h1>New User Created</h1>
+        <label>Name :</label> <%= prod.name %>
+        <br /><br />
+        <label>Password :</label> <%= prod.password %>
+        <br /><br />
+        <label>Role :</label> <%= prod.role %>
+        <br /><br />
+        <button><a href ="/auth/showall">SHOWALL</a></button>
+        <button><a href ="/users/logout">LOGOUT</a></button>
+        
+    </form>
+    </body>
+</html>
